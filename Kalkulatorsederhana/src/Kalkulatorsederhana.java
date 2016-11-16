@@ -279,7 +279,34 @@ public class Kalkulatorsederhana extends javax.swing.JFrame {
     }//GEN-LAST:event_jbtnminplusActionPerformed
 
     private void jbtnsamadenganActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnsamadenganActionPerformed
-        // TODO add your handling code here:
+    switch(pilihan){
+        case 1:
+            nomer2 = Double.parseDouble(nomer);
+            jumlah = nomer1 + nomer2;
+            nomer = Double.toString(jumlah);
+            tampilan.setText(nomer);
+            break;
+        case 2:
+            nomer2 = Double.parseDouble(nomer);
+            jumlah = nomer1 - nomer2;
+            nomer = Double.toString(jumlah);
+            tampilan.setText(nomer);
+            break;
+        case 3:
+            nomer2 = Double.parseDouble(nomer);
+            jumlah = nomer1 * nomer2;
+            nomer = Double.toString(jumlah);
+            tampilan.setText(nomer);
+            break;
+        case 4:
+            nomer2 = Double.parseDouble(nomer);
+            jumlah = nomer1 / nomer2;
+            nomer = Double.toString(jumlah);
+            tampilan.setText(nomer);
+            break;
+            default:
+            break;
+    }
     }//GEN-LAST:event_jbtnsamadenganActionPerformed
 
     private void jbtnplusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnplusActionPerformed
