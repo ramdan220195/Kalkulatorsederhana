@@ -275,7 +275,10 @@ public class Kalkulatorsederhana extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton12ActionPerformed
 
     private void jbtnminplusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnminplusActionPerformed
-        // TODO add your handling code here:
+        nomer +="";
+    
+    tampilan.setText(nomer);
+
     }//GEN-LAST:event_jbtnminplusActionPerformed
 
     private void jbtnsamadenganActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnsamadenganActionPerformed
