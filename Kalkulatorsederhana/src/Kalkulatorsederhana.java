@@ -118,6 +118,11 @@ public class Kalkulatorsederhana extends javax.swing.JFrame {
         });
 
         jButton10.setText(",");
+        jButton10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton10ActionPerformed(evt);
+            }
+        });
 
         jButton11.setText("0");
         jButton11.addActionListener(new java.awt.event.ActionListener() {
@@ -262,7 +267,11 @@ public class Kalkulatorsederhana extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
-        // TODO add your handling code here:
+    tampilan.setText("");
+    nomer1=0.0;
+    nomer2=0.0;
+    jumlah=0.0;
+    nomer="";
     }//GEN-LAST:event_jButton12ActionPerformed
 
     private void jbtnminplusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnminplusActionPerformed
@@ -351,6 +360,11 @@ public class Kalkulatorsederhana extends javax.swing.JFrame {
     nomer +="9";
     tampilan.setText(nomer);
     }//GEN-LAST:event_jButton9ActionPerformed
+
+    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+    nomer +=",";
+    tampilan.setText(nomer);
+    }//GEN-LAST:event_jButton10ActionPerformed
 
     /**
      * @param args the command line arguments
